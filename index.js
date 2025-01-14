@@ -1,11 +1,9 @@
 import express from 'express';
 import data from './data/data.json' assert { type: 'json' };
-import cores from 'cores';
 
 const app = express();
 const PORT = 4000;
 
-app.use(cores());
 // Routes
 
 app.get('/categories', (req, res) => {
